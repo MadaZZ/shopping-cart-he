@@ -1,17 +1,24 @@
-import './App.css';
-import Cart from './components/cart/cart.component';
-import CartSummary from './components/cart-summary/cart-summary.component';
-import Header from './components/header/header.component';
+import React from "react";
+
+import Header from "./components/header/header.component";
+import { CartProvider } from "./contexts/CartContext";
+import Cart from "./components/cart/cart.component";
+import CartSummary from "./components/cart-summary/cart-summary.component";
+
+import "./App.scss";
 
 function App() {
+  const styles = {
+    wrapper: "shopping_cart-wrapper",
+  };
   return (
-    <div className="App">
-      <Header/>
-      <div className='cart-details'>
+    <CartProvider>
+      <Header />
+      <div data-testid="app" className={styles.wrapper}>
         <Cart />
         <CartSummary />
       </div>
-    </div>
+    </CartProvider>
   );
 }
 
