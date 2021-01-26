@@ -19,7 +19,7 @@ export function CartProvider({ children }) {
 
   useEffect(() => {
     synchronise();
-  }, []);
+  });
 
   useEffect(() => {
     if (items && !items.length) return;
