@@ -1,0 +1,11 @@
+@import "src/styles/colors";
+
+.shopping_cart {
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

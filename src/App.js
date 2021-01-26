@@ -1,9 +1,9 @@
 import React from "react";
 
-import Header from "./components/header/header.component";
+import Header from "./components/header/Header";
 import { CartProvider } from "./contexts/CartContext";
-import Cart from "./components/cart/cart.component";
-import CartSummary from "./components/cart-summary/cart-summary.component";
+import Cart from "./components/cart/Cart";
+import Summary from "./components/summary/Summary";
 
 import "./App.scss";
 
@@ -16,7 +16,7 @@ function App() {
       <Header />
       <div data-testid="app" className={styles.wrapper}>
         <Cart />
-        <CartSummary />
+        <Summary />
       </div>
     </CartProvider>
   );

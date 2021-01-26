@@ -1,0 +1,45 @@
+@import "src/styles/colors";
+
+.shopping_cart {
+  &-cart {
+    &-wrapper {
+      flex: 1 1 50rem;
+      margin: 2rem;
+    }
+    &-row {
+      display: flex;
+      align-items: center;
+      padding: 2rem;
+      font-size: 1.8rem;
+      &-head {
+        font-size: 2rem;
+        font-weight: 300;
+        border-top: 1px solid $border;
+        border-bottom: 1px solid $border;
+      }
+    }
+    &-column1 {
+      flex: 1 1 auto;
+    }
+    &-column2 {
+      flex: 12rem 0 1;
+    }
+    &-button {
+      border: none;
+      background-color: transparent;
+      padding: 1rem;
+      margin: 0;
+      cursor: pointer;
+      font-size: 2rem;
+    }
+    &-reset {
+      border: none;
+      background-color: $highlight;
+      padding: 1rem;
+      margin: 2rem;
+      cursor: pointer;
+      font-size: 2rem;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
